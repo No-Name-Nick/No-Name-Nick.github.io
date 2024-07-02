@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulo</title>
+    <style>
+        *{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            margin: 10px;
+            text-align: center;
+
+        }
+        body{
+            background-color: powderblue;
+        }
+    
+        #desc{
+            font-size: 10px;
+            font-style: italic;
+        }
+        #Albion{
+            margin: 0;
+            width: 5%;
+            height: 5%;
+            transition: 2s;
+        }
+        #Albion:hover{
+            width: 50%;
+            height: 50%;
+        }
+        img{
+            width: 20%;
+            height: 20%;
+        }
+        .text{
+            font-size: 7px;
+            
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <p id="as">Hi. I am Niccolo Paulo J. De Castro</p>
+    <img src="Me_ThumbsUp.jpg">
+    <p id="desc">This is a picture of me in the ComLab that I really like.</p>
+    <p>Fun Fact: </p>
+    <span class="text">
+        <p>I have 30k silver in <img src="AlbionOnline.png" id="Albion" onmouseover="Alert()" onmouseout="ReverseAlt()"></p>
+    </span>
+    <p>Hobbies: </p>
+    <span class="text">
+        <p>Playing games.</p>
+        <p>Reading books.</p>
+    </span>
+    <p>Interests: </p>
+    <span class="text">
+        <p>Math</p>
+        <p>Computer Science</p>
+        <p>Minesweeper</p>
+    </span>
+ 
+    <script>
+        function Alert(){
+            document.getElementById('as').innerHTML = "Chester, please give me silver :)";
+            document.getElementById('as').style.fontSize = "50px";
+        }
+
+        function ReverseAlt(){
+            document.getElementById('as').innerHTML = "Hi. I am Niccolo Paulo J. De Castro";
+            document.getElementById('as').style.fontSize = "20px";
+        }
+
+    </script>
+</body>
+</html>
